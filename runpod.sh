@@ -25,6 +25,7 @@ screen
 # Install common libraries
 pip install -q requests accelerate sentencepiece pytablewriter einops protobuf
 pip install -U transformers
+pip install -U flash-attn --no-build-isolation
 
 if [ "$DEBUG" == "True" ]; then
     echo "Launch LLM AutoEval in debug mode"
